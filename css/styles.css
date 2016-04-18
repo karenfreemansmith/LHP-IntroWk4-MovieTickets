@@ -1,0 +1,11 @@
+body {
+  background-color: #70B296;
+}
+h1 {
+  background-color: #304C40;
+  color: white;
+  font-size: 4em;
+  line-height: 3em;
+  text-align: center;
+  font-family: 'Josefin Slab', serif;
+}
