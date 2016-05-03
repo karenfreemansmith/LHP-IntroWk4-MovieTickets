@@ -5,13 +5,52 @@
     <meta http-equiv="X-UA-compatible">
     <meta name="viewport" value="width=device-width, initial-scale=1">
     <title>Movie Tickets</title>
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
       <h1>Movie Tickets</h1>
+      <div class="row">
+        <div class="col-xs-3 col-xs-offset-2">
+          <h3>Now Playing:</h3>
+          <!-- select movie name -->
+          <select class="form-control" id="movieTite">
+            <option>Captain America: Civil War</option>
+            <option>The Boss</option>
+            <option>The Huntsman: Winter's War</option>
+            <option>The Jungle Book</option>
+            <option>Zootopia</option>
+          </select>
+        </div>
+        <div class="col-xs-3">
+          <h3>Show Times:</h3>
+          <!-- select show times -->
+          <select class="form-control" id="ticketTime">
+            <option>11:00 am</option>
+            <option>1:00 pm</option>
+            <option>3:00 pm</option>
+            <option>5:00 pm</option>
+            <option>7:00 pm</option>
+            <option>9:00 pm</option>
+            <option>11:00 pm</option>
+          </select>
+        </div>
+        <div class="col-xs-3">
+          <h3>Age for Ticket:</h3>
+          <!-- select age -->
+          <select class="form-control" id="ticketAge">
+            <option>Child</option>
+            <option>Adult</option>
+            <option>Senior</option>
+          </select>
+        </div>
+      </div>
+      <div id="ticketInfo">
+        <h3 id="yourTicket">No Movie Selected</h3>
+        <button id="buy" class="btn btn-default">Reserve Your Ticket Now</button>
+      </div>
     </div>
   <script src="js/jquery-1.12.2.js"></script>
   <script src="js/bootstrap.js"></script>
